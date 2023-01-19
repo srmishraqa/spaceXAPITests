@@ -13,7 +13,7 @@ public class TestBase {
 
         try {
             FileInputStream ip = new FileInputStream(System.getProperty("user.dir")
-                    + "\\src\\main\\java\\com\\spacex\\config\\config.properties");
+                    + "/src/main/java/com/spacex/config/config.properties");
 
             prop.load(ip);
         } catch (FileNotFoundException e) {

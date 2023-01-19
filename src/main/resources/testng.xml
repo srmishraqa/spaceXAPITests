@@ -2,11 +2,12 @@
 
 <suite name="Spacex API Suite">
 
-    <test name="Get Spacex Latest Test" >
+    <test name="Get Spacex Latest Test">
 
         <classes>
 
-            <class name="com.spacex.tests.TestLatest" />
+            <class name="com.spacex.tests.TestLatest"/>
+            <class name="com.spacex.tests.TestLaunchPads"/>
 
 
         </classes>
