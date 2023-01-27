@@ -1,6 +1,5 @@
 package com.spacex.tests;
 
-import com.google.gson.JsonObject;
 import com.spacex.base.TestBase;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
@@ -29,7 +28,8 @@ public class TestLatest extends TestBase {
 
     @Test
     public void validateStatusCode() {
-        Assert.assertEquals(response.getStatusCode(), Integer.parseInt(prop.getProperty("success")), "Response code is not matching as expected");
+        Assert.assertEquals(response.getStatusCode(), Integer.parseInt(prop.getProperty("success")),
+                "Response code is not matching as expected");
 
     }
 
@@ -48,7 +48,8 @@ public class TestLatest extends TestBase {
         Assert.assertEquals(response.getHeader("Content-Type"), prop.getProperty("contentType"));
         Assert.assertEquals(response.getHeader("Connection"), prop.getProperty("connection"));
         Assert.assertEquals(response.getHeader("Server"), prop.getProperty("server"));
-        Assert.assertEquals(response.getHeader("X-Content-Type-Options"), prop.getProperty("contentEncodingX-Content-Type-Options"));
+        Assert.assertEquals(response.getHeader("X-Content-Type-Options"),
+                prop.getProperty("contentEncodingX-Content-Type-Options"));
         Assert.assertEquals(response.getHeader("Cache-Control"), prop.getProperty("cacheControl"));
     }
 
