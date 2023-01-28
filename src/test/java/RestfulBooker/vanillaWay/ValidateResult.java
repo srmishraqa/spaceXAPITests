@@ -2,7 +2,6 @@ package RestfulBooker.vanillaWay;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.response.ResponseBodyExtractionOptions;
 import io.restassured.response.ValidatableResponse;
 
 public class ValidateResult {
